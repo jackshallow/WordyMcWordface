@@ -1,0 +1,121 @@
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <!<script data-require="jquery" data-semver="2.1.1" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="containerRow">
+      <div>
+        <input id="R1L0" class="R1" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R1L1" class="R1" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R1L2" class="R1" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R1L3" class="R1" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R1L4" class="R1" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R1L5" class="R1" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R1L6" class="R1" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <button id="firstGuess" class="submit" onclick="checkWordR1()">SUBMIT</button>
+      </div>
+    </div>
+    <div class="containerRow">
+      <div>
+        <input id="R2L0" class="R2" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R2L1" class="R2" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R2L2" class="R2" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R2L3" class="R2" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R2L4" class="R2" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R2L5" class="R2" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R2L6" class="R2" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <button id="secondGuess" class="submit" onclick="checkWordR2()">SUBMIT</button>
+      </div>
+    </div>
+    <div class="containerRow">
+      <div>
+        <input id="R3L0" class="R3" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R3L1" class="R3" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R3L2" class="R3" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R3L3" class="R3" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R3L4" class="R3" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R3L5" class="R3" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R3L6" class="R3" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <button id="thirdGuess" class="submit" onclick="checkWordR3()">SUBMIT</button>
+      </div>
+    </div>
+    <div class="containerRow">
+      <div>
+        <input id="R4L0" class="R4" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R4L1" class="R4" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R4L2" class="R4" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R4L3" class="R4" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R4L4" class="R4" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R4L5" class="R4" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R4L6" class="R4" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <button id="fourthGuess" class="submit" onclick="checkWordR4()">SUBMIT</button>
+      </div>
+    </div>
+    <div class="containerRow">
+      <div>
+        <input id="R5L0" class="R5" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R5L1" class="R5" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R5L2" class="R5" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R5L3" class="R5" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R5L4" class="R5" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R5L5" class="R5" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R5L6" class="R5" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <button id="fifthGuess" class="submit" onclick="checkWordR5()">SUBMIT</button>
+      </div>
+    </div>
+    <div class="containerRow">
+      <div>
+        <input id="R6L0" class="R6" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R6L1" class="R6" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R6L2" class="R6" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R6L3" class="R6" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R6L4" class="R6" type="text" maxlength="1" onkeyup="validate(this);"/>
+        <input id="R6L5" class="R6" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <input id="R6L6" class="R6" type="text" maxlength="1"  onkeyup="validate(this);"/>
+        <button id="sixthGuess" class="submit" onclick="checkWordR6()">SUBMIT</button>
+      </div>
+    </div>
+    <div class="containerRow">
+      <p id="word"></p>
+	  <p id="today"></p>
+    </div>
+	<div class="containerRow">
+		<button id="Q" class="keyboard" onclick="enterLetter(this.id);">Q</button>
+		<button id="W" class="keyboard" onclick="enterLetter(this.id);">W</button>
+		<button id="E" class="keyboard" onclick="enterLetter(this.id);">E</button>
+		<button id="R" class="keyboard" onclick="enterLetter(this.id);">R</button>
+		<button id="T" class="keyboard" onclick="enterLetter(this.id);">T</button>
+		<button id="Y" class="keyboard" onclick="enterLetter(this.id);">Y</button>
+		<button id="U" class="keyboard" onclick="enterLetter(this.id);">U</button>
+		<button id="I" class="keyboard" onclick="enterLetter(this.id);">I</button>
+		<button id="O" class="keyboard" onclick="enterLetter(this.id);">O</button>
+		<button id="P" class="keyboard" onclick="enterLetter(this.id);">P</button>	
+	</div>
+	<div class="containerRow">
+		<button id="A" class="keyboard" onclick="enterLetter(this.id);">A</button>
+		<button id="S" class="keyboard" onclick="enterLetter(this.id);">S</button>
+		<button id="D" class="keyboard" onclick="enterLetter(this.id);">D</button>
+		<button id="F" class="keyboard" onclick="enterLetter(this.id);">F</button>
+		<button id="G" class="keyboard" onclick="enterLetter(this.id);">G</button>
+		<button id="H" class="keyboard" onclick="enterLetter(this.id);">H</button>
+		<button id="J" class="keyboard" onclick="enterLetter(this.id);">J</button>
+		<button id="K" class="keyboard" onclick="enterLetter(this.id);">K</button>
+		<button id="L" class="keyboard" onclick="enterLetter(this.id);">L</button>
+	</div>
+	<div class="containerRow">
+		<button id="Z" class="keyboard" onclick="enterLetter(this.id);">Z</button>
+		<button id="X" class="keyboard" onclick="enterLetter(this.id);">X</button>
+		<button id="C" class="keyboard" onclick="enterLetter(this.id);">C</button>
+		<button id="V" class="keyboard" onclick="enterLetter(this.id);">V</button>
+		<button id="B" class="keyboard" onclick="enterLetter(this.id);">B</button>
+		<button id="N" class="keyboard" onclick="enterLetter(this.id);">N</button>
+		<button id="M" class="keyboard" onclick="enterLetter(this.id);">M</button>
+	</div>
+		<div class="containerRow">
+		<button id="delete" class="keyboard" onclick="deleteButton();">Delete</button>
+	</div>
+  </div>
+</body>

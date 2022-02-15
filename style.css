@@ -1,0 +1,46 @@
+input {
+  width: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerRow{
+  padding-bottom: 4px;
+}
+
+.submit {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.keyboard {
+	font-weight: bold;
+	width: 25px;
+	height: 25px;
+}
+
+#delete {
+	width: 80px;
+}
+
+input:focus, textarea:focus {
+border: 1px solid green !important;
+box-shadow: 0 0 3px green !important;
+-moz-box-shadow: 0 0 3px green !important;
+-webkit-box-shadow: 0 0 3px green !important;
+}
+
+input:focus, textarea:focus, select:focus {
+outline-offset: 0px !important;
+outline: none !important;
+}
+
